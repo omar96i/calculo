@@ -12,6 +12,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->call(ActuarialGroupSeeder::class);
+        //$this->call(ActuarialGroupSeeder::class);
+        //$this->call(AxyNameSeeder::class);
+        $this->call(TableSeeder::class);
     }
 }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AxyValueController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,3 +13,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+
+Route::get('/axyvalues/import', [AxyValueController::class, 'create'])->name('axyvalues.import.create');
+Route::post('/axyvalues/import', [AxyValueController::class, 'store'])->name('axyvalues.import.store');
